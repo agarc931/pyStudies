@@ -40,5 +40,5 @@ def decrypt(text, shift):
 encrypted_text = encrypt('freeCodeCamp', 3)
 decrypted_text = decrypt('Pbhentr vf sbhaq va hayvxryl cynprf.', 13)
 
-print(encrypted_text)
-print(decrypted_text)
+print(encrypted_text) # will print iuhhFrghFdps
+print(decrypted_text) # will print Courage is found in unlikely places.
