@@ -65,3 +65,18 @@ name, *rest = developer_list
 print(name) # 'Alice'
 print(rest) # [34, 'Rust Developer']
 
+# If the numbers of variables on the left side of the assignment operator doesn't match the total 
+# numbers of items in the list, then you will receive a ValueError
+
+# The slice operator (:) Similar to strings, you can access portions of a list by using the slice
+# operator like this:
+desserts = ['Cake', 'Cookies', 'Ice Cream', 'Pie', 'Brownies']
+desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie']
+# the start index is 1 since that points to the second item in the list. 
+# Then we use the slice operator followed by an end index of 4, which includes 
+# everything up to (but not including), the item at that index.
+
+# Another thing you can do with the slice operator : is specify a step 
+# interval which determines how much to increment between the indices.
+numbers = [1, 2, 3, 4, 5, 6]
+numbers[1::2] # [2, 4, 6]
