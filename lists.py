@@ -80,3 +80,20 @@ desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie']
 # interval which determines how much to increment between the indices.
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6]
+
+# There are some common methods associated with lists such as:
+# append(), extend(), insert()
+# pop()
+# sort()
+
+# How to use append() -- This is used to add an item at the end of the list.
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers) # [1, 2, 3, 4, 5, 6]
+
+# you can also use this method to add a list at the end of another.
+even_numbers = [6, 8, 10]
+numbers.append(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, 6, [6, 8, 10]]
+# Notice how the even_numbers nested inside the numbers list.
+
