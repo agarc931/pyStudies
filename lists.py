@@ -30,8 +30,9 @@ print(programming_languages) # ['JavaScript', 'Java', 'C++', 'Rust']
 
 # If you want to remove an element from a list you can use the del keyword like this:
 developer_list = ['Jane Doe', 23, 'Python Developer']
-del developer[1]
-print(developer) # ['Jane Doe', 'Python Developer']
+# del developer_list[1] if this line was added, it would
+# return an error when called this list below
+print(developer_list) 
 
 # Sometimes it is helpful to check if an element is inside the list. To do that, 
 # you can use the in keyword like this:
@@ -43,11 +44,11 @@ developer_nested = ['Alice', 25, ['Python', 'Rust', 'C++']]
 
 # To access the nested list, you will need to access it using index 2 
 # since lists are zero based indexed:
-developer[2] # ['Python', 'Rust', 'C++']
+developer_nested[2] # ['Python', 'Rust', 'C++']
 
 # Then to access the second language from that nested list,
 # you will need to access it using index 1 like this:
-developer[2][1] # 'Rust'
+developer_nested[2][1] # 'Rust'
 
 # Unpacking values from a list is a technique used to assign values from a list to 
 # new variables. Here is an example of unpacking a developer list into 
