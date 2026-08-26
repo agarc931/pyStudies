@@ -82,7 +82,8 @@ desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie']
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6]
 
-# There are some common methods associated with lists such as:
+### METHODS ###  
+#There are some common methods associated with lists such as:
 # append(), extend(), insert()
 # pop()
 # sort()
@@ -98,3 +99,68 @@ numbers.append(even_numbers)
 print(numbers) # [1, 2, 3, 4, 5, 6, [6, 8, 10]]
 # Notice how the even_numbers nested inside the numbers list.
 
+# But if you want to add all of the individual numbers from the even_numbers list at the end 
+# of the numbers list, then you can use the extend() method. Similar to append() but you
+# can add multiple elements from one list to another
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+
+numbers.extend(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
+
+# To insert an element at a specific index in a list, you can use the insert() method. 
+# This method accepts two arguments: the index where you wish to insert the new 
+# item and the item you want to insert.
+numbers = [1, 2, 3, 4, 5]
+numbers.insert(2, 2.5)
+
+print(numbers) # [1, 2, 2.5, 3, 4, 5]
+# This inserted the 2.5 in index 2, and shifted the rest of the element by one position.
+
+# To remove an element from a list, you can use the remove() method. It takes the value
+# of the element to remove as an argument
+numbers = [10, 20, 30, 40, 50, 50]
+numbers.remove(50)
+
+print(numbers) # [10, 20, 30, 40, 50]
+# As you can see, it only removes the FIRST occurrence in the list.
+
+# To remove an element at a specific index in the list, you can use the 
+# pop() method like this:
+numbers = [1, 2, 3, 4, 5]
+numbers.pop(1) # The number 2 is returned
+# If you don't specify an element for the pop methif, the last element is removed.
+numbers = [1, 2, 3, 4, 5]
+numbers.pop() # The number 5 is returned
+
+# To empty the list, you can use the clear() method like this:
+numbers = [1,2,3,4,5]
+numbers.clear()
+
+print(numbers)  #[]
+
+# The sort() method is used to sort the elements in place.
+numbers = [19, 2, 35, 1, 67, 41]
+numbers.sort()
+
+print(numbers) # [1, 2, 19, 35, 41, 67]
+
+# sorted() works for any iterable and returns a new sorted list instead of modifying
+# the original list.
+numbers = [19, 2, 35, 1, 67, 41]
+sorted_numbers = sorted(numbers)
+
+print(numbers) # [19, 2, 35, 1, 67, 41]
+print(sorted_numbers) # [1, 2, 19, 35, 41, 67]
+# an iterable is a special type of object that you can loop over, allowing you to access each item one at a time.
+
+# reverse() will reverse a list of elements in place like this:
+numbers = [6, 5, 4, 3, 2, 1]
+numbers.reverse()
+
+print(numbers) # [1, 2, 3, 4, 5, 6]
+
+# index() is used to find the first index where an element can be found in a list.
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+programming_languages.index('Java') # 1
+# if the element cannot be found, then Python throws a ValueError
