@@ -14,8 +14,6 @@ developer[-2] # 4
 # If you try to pass in an index number that exceeds or equals the length 
 # of the tuple, then you will receive an IndexError
 
-### Methods ###
-
 # To make a tuple out of  another variable use the tuple() method.
 developer = 'Jessica'
 tuple(developer) # ('J', 'e', 's', 's', 'i', 'c', 'a')
