@@ -13,3 +13,25 @@ numbers = (1,2,3,4,5)
 developer[-2] # 4
 # If you try to pass in an index number that exceeds or equals the length 
 # of the tuple, then you will receive an IndexError
+
+### Methods ###
+
+# To make a tuple out of  another variable use the tuple() method.
+developer = 'Jessica'
+tuple(developer) # ('J', 'e', 's', 's', 'i', 'c', 'a')
+# As a parameter you can pass in different iterable data types
+# such as: strings, lists, and even other tuples.
+
+# To check if an item is in a tuple, you can use the 'in' keyword like this:
+programming_languages = ('Python', 'Java', 'C++', 'Rust')
+
+'Rust' in programming_languages # True
+'JavaScript' in programming_languages # False
+
+# You can also unpack items from a tuple just like you did with lists:
+developer = ('Alice', 34, 'Rust Developer')
+name, age, job = developer
+
+print(name) # 'Alice'
+print(age) # 34
+print(job) # 'Rust Developer'
