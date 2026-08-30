@@ -6,8 +6,8 @@
 # the for loop
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 
-for language in programming_languages:
-    print(language)
+for language in programming_languages: # will iterate through each index in the list 
+    print(language)                    # and print it.
 
 # Rust
 # Java
