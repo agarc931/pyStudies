@@ -17,3 +17,11 @@ print(even_numbers)  # [2, 4]
 # In this example, we have a list of numbers and want to create a new list of even numbers. 
 # So we pass in a lambda function as one of the arguments to the filter() function to get a new 
 # list containing the numbers 2 and 4.
+
+# Don't assign lambda functions to variables, this defeats the purpose
+# of anonymous functions. If needed to save the function or make it reusable,
+# use regular funcion.
+
+# Avoid creating lambda functions that are difficult to read or 
+# unnecessarily complicated. Like if it involves multiple steps
+
